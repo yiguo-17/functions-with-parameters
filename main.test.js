@@ -91,14 +91,14 @@ describe('opposite', () => {
 
 describe('makeFullName', () => {
   it(`adds a space and the parameter to name`, () => {
-    const oldName = name;
+    let oldName = name;
     makeFullName('Jaffe')
-    expect(name).toBe(`${oldName} Jaffe`);
+    expect(name).toBe(oldName + ' Jaffe');
   })
 });
 
 describe('yellAt', () => {
-  it(`makes_greeting_into_a_string_that_yells_the_greeting_at_someone`, () => {
+  it(`makes greeting into a string that yells the greeting at someone`, () => {
     yellAt('Colin');
     expect(greeting).toEqual(`HEY, Colin!`);
   })
