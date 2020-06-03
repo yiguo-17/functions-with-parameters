@@ -4,11 +4,29 @@ Your code goes below.
 
 */
 
+//Varibles
+let x = 3;
+let y = 10;
+let z = 5;
+let name = 'Yiguo';
+let greeting = 'HEY';
 
-
-
-
-
+// Functions
+function multiply(mp){
+x = x * mp 
+}
+function modYBy(mYP){
+  y = y % mYP
+}
+function opposite(op){
+  z = op * (-1)
+}
+function makeFullName(lstnm){
+name = name + ' ' + lstnm
+}
+function yellAt(ncknm){
+  greeting = greeting + ', ' + ncknm + '!'
+}
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
